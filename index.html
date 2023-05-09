@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="calculator">
+            <input type="text" id="input" readonly>
+            <div class="calculator-raw">
+                <button onclick="addToInput('%')" class="calculator-button operator">%</button>
+                <button onclick="addToInput('/')" class="calculator-button operator">÷</button>
+                <button onclick="clearInput('')" class="calculator-button operator ac">AC</button>
+                <button onclick="backDel('')" class="calculator-button operator">⇐</button>
+            </div>
+            <div class="calculator-raw">
+                <button onclick="addToInput('1')" class="calculator-button">1</button>
+                <button onclick="addToInput('2')" class="calculator-button">2</button>
+                <button onclick="addToInput('3')" class="calculator-button">3</button>
+                <button onclick="addToInput('+')" class="calculator-button operator">+</button>
+            </div>
+            <div class="calculator-raw">
+                <button onclick="addToInput('4')" class="calculator-button">4</button>
+                <button onclick="addToInput('5')" class="calculator-button">5</button>
+                <button onclick="addToInput('6')" class="calculator-button">6</button>
+                <button onclick="addToInput('-')" class="calculator-button operator">−</button>
+            </div>
+            <div class="calculator-raw">
+                <button onclick="addToInput('7')" class="calculator-button">7</button>
+                <button onclick="addToInput('8')" class="calculator-button">8</button>
+                <button onclick="addToInput('9')" class="calculator-button">9</button>
+                <button onclick="addToInput('*')" class="calculator-button operator">×</button>
+            </div>
+            <div class="calculator-raw">
+                <button onclick="addToInput('0')" class="calculator-button zero">0</button>
+                <button onclick="addToInput('.')" class="calculator-button operator dot">⋅</button>
+                <button onclick="calculate()" class="calculator-button operator equal">=</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="/app.js"></script>
+
+</html>
